@@ -28,28 +28,163 @@
     </div>
     <div class="sidebar">
         <div class="sidebar-header">主页</div>
-        <div class="actlist selected">
+        <div class="activist selected">
             <a href="#"><b>热门</b></a>
             <div class="number">34</div>
         </div>
-        <div class="actlist">最新</div>
-        <div class="actlist">关注</div>
-        <div class="actlist">历史记录</div>
+        <div class="activist">最新</div>
+        <div class="activist">关注</div>
+        <div class="activist">历史记录</div>
+        <div class="activist">分区</div>
         <hr class="sidebar-divide">
-        <div class="actlist">收藏夹1</div>
-        <div class="actlist">收藏夹2</div>
+        <div class="activist">收藏夹1</div>
+        <div class="activist">收藏夹2</div>
     </div>
     <div class="content">
+        <div class="question-block make-ques">
+            <h2>提问</h2>
+            <hr>
+            <form action="">
+                <label for="comment-area"></label>
+                <textarea name="comment" id="comment-area" cols="30" rows="3"></textarea>
+                <input type="submit">
+            </form>
+        </div>
         <div class="question-block">
             <div class="ques info">
                 <div class="img">
-                    <img src=".\data\p1.webp" alt="p1" width="60px" height="60px">
+                    <img src="data\p1.webp" alt="p1" width="60px" height="60px">
                 </div>
-                <div class="name">Alice</div>
-                <div class="place">Beijing</div>
+                <div class="person">
+                    <div class="name">Alice</div>
+                    <div class="place">这个人很懒，什么都没有写。</div>
+                </div>
+                <div class="subscribe">
+                    <button type="submit">关注</button>
+                </div>
             </div>
-            <div class="ques cont"></div>
-            <div class="ques comm"></div>
+            <div class="ques cont">
+                <h2>关于多元函数的偏导</h2>
+                <p>
+                    为什么这里对x偏导的时候没有把z也对x偏导啊？(示例）
+                </p>
+            </div>
+            <div class="ques ques-img">
+                <img src="data/t1.png" alt="t1">
+            </div>
+            <div class="ques tag">
+                <span>提问</span>
+                <span>高等数学</span>
+                <span>多元函数</span>
+            </div>
+            <div class="ques comm">
+                <h2>评论/回答</h2>
+                <hr>
+                <form action="">
+                    <label for="comment-area"></label>
+                    <textarea name="comment" id="comment-area" cols="30" rows="3"></textarea>
+                    <input type="submit">
+                </form>
+                <hr>
+                <div class="comment-block">
+                    <div class="info">
+                        <div class="img">
+                            <img src="data\p2.webp" alt="p2" width="60px" height="60px">
+                        </div>
+                        <div class="person">
+                            <div class="name">Bob</div>
+                            <div class="place">怎么睡都睡不醒</div>
+                        </div>
+                        <div class="subscribe">
+                            <button type="submit">关注</button>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <p>这个题需要把z当作独立的变量，也就是暂定它和x没有关系，你用这种思路再想一想。你可以看一下下面的资料：偏导数将导数的概念推广到更高维度。一个多变量函数的偏导数是一个相对于一个变量的导数，所有其他变量视作常数，保持不变。
+
+                            偏导数可以组合起来，创造出形式更复杂的导数。在向量分析中，Nabla算子(
+                            ∇ )依据偏导数被用于定义这些概念：梯度，散度，旋度。在含有偏导数的矩阵中，雅可比矩阵可以用来表示任意维空间之间的函数的导数。因此，导数可理解为从函数定义域到函数值域的逐点变化的线性映射。
+
+                            含有偏导数的微分方程称为偏微分方程或“PDE”。这些方程较只含有一个变量的常微分方程更难解出。</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="question-block">
+            <div class="ques info">
+                <div class="img">
+                    <img src="data\p3.webp" alt="p3" width="60px" height="60px">
+                </div>
+                <div class="person">
+                    <div class="name">Cindy</div>
+                    <div class="place">不会还有人信上帝吧...</div>
+                </div>
+                <div class="subscribe">
+                    <button type="submit">关注</button>
+                </div>
+            </div>
+            <div class="ques cont">
+                <p>
+                    为什么这里对x偏导的时候没有把z也对x偏导啊？(示例）
+                </p>
+            </div>
+            <div class="ques ques-img">
+                <img src="data/t1.png" alt="t1">
+            </div>
+            <div class="ques tag">
+                <span>提问</span>
+                <span>高等数学</span>
+                <span>多元函数</span>
+            </div>
+            <div class="ques comm">
+                <h2>评论/回答</h2>
+                <hr>
+                <form action="">
+                    <label for="comment-area"></label>
+                    <textarea name="comment" id="comment-area" cols="30" rows="3"></textarea>
+                    <input type="submit">
+                </form>
+                <hr>
+                <div class="comment-block">
+                    <div class="info">
+                        <div class="img">
+                            <img src="data\p2.webp" alt="p2" width="60px" height="60px">
+                        </div>
+                        <div class="person">
+                            <div class="name">Bob</div>
+                            <div class="place">怎么睡都睡不醒</div>
+                        </div>
+                        <div class="subscribe">
+                            <button type="submit">关注</button>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <p>这个题需要把z当作独立的变量，也就是暂定它和x没有关系，你用这种思路再想一想。你可以看一下下面的资料：偏导数将导数的概念推广到更高维度。一个多变量函数的偏导数是一个相对于一个变量的导数，所有其他变量视作常数，保持不变。
+
+                            偏导数可以组合起来，创造出形式更复杂的导数。在向量分析中，Nabla算子(
+                            ∇ )依据偏导数被用于定义这些概念：梯度，散度，旋度。在含有偏导数的矩阵中，雅可比矩阵可以用来表示任意维空间之间的函数的导数。因此，导数可理解为从函数定义域到函数值域的逐点变化的线性映射。
+
+                            含有偏导数的微分方程称为偏微分方程或“PDE”。这些方程较只含有一个变量的常微分方程更难解出。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-side">
+        <div class="question-block similar">
+            <h2>等你回答</h2>
+            <hr>
+            <div class="similar-content">
+                <ul>
+                    <li>为什么用结点电压和用网孔电流计算的结果不同？</li>
+                    <li>关于刚体转动的一些问题</li>
+                    <li>你们平常怎么记公式？</li>
+                    <li>每天都在被特征矩阵薄纱</li>
+
+                </ul>
+            </div>
         </div>
     </div>
 </body>

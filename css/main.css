@@ -1,6 +1,17 @@
+@font-face{
+    font-family:"normal",sans-serif;
+    src:url("/data/font.woff")format("woff");
+}
+
 *{
     margin: 0px;
     padding: 0px;
+    color:#37485a;
+    font-family: "normal",sans-serif;
+}
+
+body{
+    background-color: #ecedef;
 }
 
 a{
@@ -74,13 +85,13 @@ input[type="search"] {
     width: 75px;
     height: 40px;
     border-radius: 20px;
-    border:0px;
+    /*border:0px;*/
     margin: 5px;
     border: 1px solid #ddd
   }
 
   #submit:hover{
-    background-color: #def4fe;
+    background-color: #0062cc;
   }
 
   .sidebar{
@@ -99,14 +110,15 @@ input[type="search"] {
     /*background-color: #eef3ff;*/
     font-size: 80px;
     padding:50px 25px;
+	color: #37485a;
   }
 
-  div.actlist{
+  div.activist{
     box-sizing: border-box;
     width: 90%;
     height: 40px;
     background-color: #ecedef;
-    text-decoration: rgb(0, 31, 51);
+    text-decoration: #37485a;
     /*border: rgb(143, 210, 255) solid 1px;*/
     font-size: 20px;
     border-radius: 0 20px 20px 0;
@@ -114,23 +126,23 @@ input[type="search"] {
 
   }
 
-  div.actlist:hover{
+  div.activist:hover{
     background-color: #def;
   }
 
-  div.actlist>a{
+  div.activist>a{
     text-decoration: rgb(0, 31, 51);
   }
 
-  div.actlist>a:checked{
+  div.activist>a:checked{
     text-decoration: rgb(0, 31, 51);
   }
 
-  .actlist>.number{
+  .activist>.number{
     float:right;
   }
 
-  .actlist.selected{
+  .activist.selected{
     background-color: #def;
   }
 
@@ -144,18 +156,24 @@ input[type="search"] {
     float: left;
     background-color: #ecedef;
     width: 60vw;
-    height: 100vh;
+    /*height: 100vh;*/
     margin-top: 50px;
     margin-left: 300px;
 }
 
 .question-block{
+    display:flex;
+    flex-direction: column;
     width: 100%;
-    background-color: rgb(237, 249, 255);
+    background-color: #edf7ff;
     box-sizing: border-box;
     margin: 10px 0;
     border-radius: 20px;
     padding: 20px 25px;
+}
+
+.question-block>*{
+    flex:none;
 }
 
 div.img{
@@ -173,7 +191,142 @@ div.info{
     border-radius: 30px;
 }
 
-.info>.name{
-    padding-left: 15px;
-
+.person{
+	float: left;
 }
+
+.name{
+    padding-left: 15px;
+    font-size: 25px;
+    color: #37485a;
+}
+
+.place{
+	padding-left: 15px;
+	color:#9dbceb;
+}
+
+div.subscribe{
+	box-sizing: border-box;
+	height: 60px;
+	float:right;
+	line-height: 60px;
+}
+
+.subscribe button{
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 19px;
+    color: #fff;
+    padding: 10px 25px;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.subscribe button:hover{
+    background-color: #0062cc;
+    color: #fff;
+}
+
+.cont{
+    color: #37485a;
+    box-sizing: border-box;
+    padding: 15px 0;
+}
+
+.ques-img>img{
+    border-radius: 20px;
+    width: 80%;
+    margin:10px 0;
+}
+
+.tag {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag > span {
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+div.comm {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.question-block hr{
+    margin:5px 0;
+    width: 100%;
+    height: 4px;
+    background-color: #d8e6f8;
+    text-align: center;
+    border:none;
+    border-radius: 2px;
+}
+
+.question-block textarea{
+    box-sizing: border-box;
+    width: 85%;
+    height: 100px;
+    border:none;
+    resize: none;
+    padding:15px 10px;
+    margin: 15px 0;
+    border-radius: 20px;
+}
+
+.question-block textarea:focus{
+    border:1px solid #cff0ff;
+}
+
+.question-block input{
+    box-sizing: border-box;
+    float:right;
+    width: 15%;
+    height: 100px;
+    margin: 15px 0;
+    border:none;
+    background-color: #ecedef;
+    border-radius: 20px;
+    font-size:20px;
+    color: #37485a;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.comm>.comment-block{
+    box-sizing: border-box;
+    border-radius: 20px;
+    border:1px solid #ccc;
+    padding:10px 20px;
+    margin:10px 0;
+}
+
+.right-side{
+    box-sizing: border-box;
+    display:inline-flex;
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    margin:50px 0 0 0;
+    background-color: #ecedef;
+}
+
+.question-block.similar{
+    height: fit-content;
+    margin: 10px;
+    padding:20px;
+}
+
+ul li{
+    list-style-type: none;
+    line-height: 23px;
+    padding:10px 0;
+}
+
